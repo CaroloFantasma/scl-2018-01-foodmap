@@ -9,7 +9,7 @@ const screenTwo = () => {
   document.getElementById('screenTwo').style.display = 'block';
 }
 
-window.onload = function() {
+window.onload = () => {
   setTimeout(screenTwo, 4000);
 };
 
