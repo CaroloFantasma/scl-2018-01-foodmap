@@ -1,10 +1,10 @@
 //Splash
-function screenOne() {
+const screenOne = () => {
   document.getElementById('screenOne').style.display = 'block';
   document.getElementById('screenTwo').style.display = 'none';
 }
 
-function screenTwo() {
+const screenTwo = () => {
   document.getElementById('screenOne').style.display = 'none';
   document.getElementById('screenTwo').style.display = 'block';
 }

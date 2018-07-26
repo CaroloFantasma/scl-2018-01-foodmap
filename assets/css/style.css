@@ -3,9 +3,13 @@ body {
 }
 
 #mainTitle{
-  margin-top: 30%;
+  margin-top: 10%;
   text-align: center;
   color: rgb(233, 143, 40);
+}
+
+#potato {
+  width: 100%;
 }
 
 #mapContainer {
