@@ -2,3 +2,11 @@
   height: 400px; 
   width: 60%; 
   }
+
+  #searchInput {
+    margin-top: 15%;
+  }
+
+  #screenTwo {
+    display: none;
+  }
