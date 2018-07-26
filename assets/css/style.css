@@ -1,12 +1,36 @@
+body {
+  background-color: rgb(43, 39, 39);
+}
+
+#mainTitle{
+  margin-top: 30%;
+  text-align: center;
+  color: rgb(233, 143, 40);
+}
+
 #mapContainer {
-  height: 400px; 
-  width: 60%; 
+  height: 300px; 
+  width: 100%; 
+  border: solid rgb(233, 143, 40);
   }
 
   #searchInput {
-    margin-top: 15%;
+    margin-top: 5%;
+    margin-left: 20%;
+    border: solid thin rgb(233, 143, 40);
+    border-radius: 6px;
   }
 
   #screenTwo {
     display: none;
+  }
+
+  h1 {
+    text-align: center;
+    color: rgb(233, 143, 40);
+  }
+
+  .col-centrada {
+    float: none;
+    margin: 0 auto;
   }

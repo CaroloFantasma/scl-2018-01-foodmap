@@ -1,3 +1,4 @@
+//Splash
 function screenOne() {
   document.getElementById('screenOne').style.display = 'block';
   document.getElementById('screenTwo').style.display = 'none';
@@ -8,11 +9,11 @@ function screenTwo() {
   document.getElementById('screenTwo').style.display = 'block';
 }
 
-
 window.onload = function() {
   setTimeout(screenTwo, 4000);
 };
 
+//Función para que el mapa aparezca en pantalla
 function initMap() {
   map = new google.maps.Map(document.getElementById('mapContainer'), {
     center: { lat: -33.400, lng: -70.600 },
@@ -21,10 +22,9 @@ function initMap() {
   });
   infoWindow = new google.maps.InfoWindow;
 
-  // Create the search box and link it to the UI element.
+  //Input de búsqueda
   let input = document.getElementById('searchInput');
   let searchBox = new google.maps.places.SearchBox(input);
-  // map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
   // Bias the SearchBox results towards current map's viewport.
   map.addListener('bounds_changed', function() {
@@ -79,6 +79,7 @@ function initMap() {
     });
     map.fitBounds(bounds);
   });
+  //Ubicación actual (geolocalización)
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(function(position) {
       let pos = {
