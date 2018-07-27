@@ -16,14 +16,11 @@
   <div class="container-fluid" id="screenOne">
     <div class="row">
       <div class="col-12">
-        <h1 id="mainTitle">Food Map</h1>
+        <p>Bienvenid@ a</p>
+        <p id="foodMap">Food Map</p>
       </div>
     </div>
-    <div>
-      <img id="potato" src="img/potatoes.jpeg" alt="">
-    </div>
-  </div>
-  <!-- cierre div de primera pantalla -->
+  </div> <!-- cierre div de primera pantalla -->
 
   <div class="container-fluid" id="screenTwo">
     <div class="row">
@@ -40,21 +37,16 @@
 
     <div class="row">
       <div class="col-md-6 offset-md-3">
+        <div><h3>Comida cerca de ti</h3></div>
         <div class="input-group mb-3">
           <input type="search" id="searchInput" placeholder="Búsqueda">
         </div>
       </div>
     </div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content" id="placeInfo">
-          ...
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- cierre div de segunda pantalla -->
+
+<div id="modalInfo"></div>
+
+  </div><!-- cierre div de segunda pantalla -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -65,6 +57,7 @@
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF_qGFgjLRuCzitRrZuwxzFQIaGA1bwTE&libraries=places&callback=initMap">
   </script>
   <script src="../assets/js/app.js"></script>
+  <script src="../assets/js/main.js"></script>
 </body>
 
 </html>

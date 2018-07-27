@@ -1,40 +1,80 @@
 body {
-  background-color: rgb(43, 39, 39);
+  background-image: url(../img/food4.jpeg);
+  background-repeat: no-repeat;
 }
 
-#mainTitle{
-  margin-top: 10%;
+p {
+  margin-top: 2%;
   text-align: center;
-  color: rgb(233, 143, 40);
+  color: black;
+  font-size: 40px;
 }
 
-#potato {
-  width: 100%;
+#foodMap {
+  text-align: center;
+  color: black;
+  font-size: 40px;
 }
 
 #mapContainer {
-  height: 300px; 
-  width: 100%; 
-  border: solid rgb(233, 143, 40);
+  height: 300px;
+  width: 100%;
+  border: solid medium black;
+}
+
+#searchInput {
+  margin-top: 5%;
+  margin-left: 20%;
+  border: solid thin black;
+  border-radius: 6px;
+  text-align: center;
+}
+
+#screenTwo {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.col-centrada {
+  float: none;
+  margin: 0 auto;
+}
+
+h3 {
+  text-align: center;
+  color: black;
+  margin-top: 5%;
+}
+
+@media(min-width: 768px) {
+
+  #mainTitle {
+    margin-top: 20%;
+    font-size: 50px;
   }
 
   #searchInput {
     margin-top: 5%;
-    margin-left: 20%;
-    border: solid thin rgb(233, 143, 40);
-    border-radius: 6px;
+    margin-left: 30%;
+    border: solid thin black;
+    background-color: rgb(212, 238, 206);
+    width: 40%;
   }
 
-  #screenTwo {
-    display: none;
+  #mapContainer {
+    height: 500px;
+    width: 100%;
   }
 
-  h1 {
-    text-align: center;
-    color: rgb(233, 143, 40);
+  p {
+    font-size: 80px;
   }
 
-  .col-centrada {
-    float: none;
-    margin: 0 auto;
+  #foodMap {
+    font-size: 80px;
   }
+}  
